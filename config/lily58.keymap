@@ -10,12 +10,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
+    combos { compatible = "zmk,combos"; };
 
-        Size {
-            bindings = <&kt BACKSPACE>;
-            key-positions = <28 27>;
+    macros {
+        size: size {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LALT)>, <&macro_press>, <&kp F>;
+
+            label = "SIZE";
         };
     };
 
