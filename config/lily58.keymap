@@ -15,7 +15,7 @@
 
         Size {
             bindings = <&kt BACKSPACE>;
-            key-positions = <50 24>;
+            key-positions = <28 27>;
         };
     };
 
